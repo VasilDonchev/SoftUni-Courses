@@ -19,9 +19,9 @@ function bunnyKill(arr) {
       arr[x][y+1] -= bomb;
       arr[x+1][y+1] -= bomb;
 
-    } else if (bomb > 0 && (x == 0 && y > 0 ) {
+    // } else if (bomb > 0 && (x == 0 && y > 0 ) {
       
-    }{
+    // }{
       
     }
   }

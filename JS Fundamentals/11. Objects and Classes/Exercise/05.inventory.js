@@ -3,8 +3,9 @@ function inventory(input){
 
     for (const heroInfo of input) {
         let [name, level, items] = heroInfo.split(' / ');
-        items.split(', ').sort((a,b) => a.localeCompare());
-        console.log(heroInfo);
+        items.sort()((a,b) => a.localeCompare(b));
+        heroes.push({name}, {level},{items});
+        console.log(heroes);
     }
 
     
