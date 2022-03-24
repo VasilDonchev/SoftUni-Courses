@@ -1,0 +1,36 @@
+Subjects
+•	Basic Syntax, Conditional Statements and Loops
+•	Exercise: Basic Syntax, Conditional Statements and Loops
+•	HTTP Basics
+•	Data Types and Variables
+•	Exercise: Data Types and Variables
+•	HTML & CSS Basics
+•	Arrays
+•	Exercise: Arrays
+•	Software Development Concepts - Part 1
+•	Functions
+•	Exercise: Functions
+•	Software Development Concepts - Part 2
+•	Arrays Advanced
+•	Exercise: Arrays Advanced
+•	Exam Preparation
+•	Mid Exam
+•	Objects and Classes
+•	Exercise: Objects and Classes
+•	Bitwise Operations
+•	Associative Arrays
+•	Exercise: Associative Arrays
+•	Problem Solving
+•	Text Processing
+•	Exercise: Text Processing
+•	Database Basics
+•	Regular Expressions
+•	Exercise: Regular Expressions
+•	Git and GitHub
+•	Exam Preparation
+•	Exam Preparation
+•	QA Introduction
+•	Basic Web Project
+•	Practical Exam
+•	Retake Mid Exam
+•	Retake Practical Exam
