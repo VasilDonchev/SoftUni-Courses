@@ -1,7 +1,7 @@
 bin
 obj
 .vs
-.doc
-.docx
-.pptx
-.pdf
+*.doc
+*.docx
+*.pptx
+*.pdf
