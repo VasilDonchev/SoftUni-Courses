@@ -5,6 +5,7 @@ function arrayManipulator(numbers, commands) {
         let currentCommand = tokens[0];
         let index = Number(tokens[1]);
 
+
         switch (currentCommand) {
             case 'add':
                 let element = +tokens[2];
@@ -42,19 +43,19 @@ function arrayManipulator(numbers, commands) {
                 numbers = resultArr;
                 break;
                 
-            default:
+            case 'print':
                 console.log(`[ ${numbers.join(', ')} ]`);
-                return;
+                break;
         }
     }
 }
-// arrayManipulator([1, 2, 4, 5, 6, 7],
-//     [ 'sumPairs','add 1 8', 'contains 1', 'contains 3', 'print']
-// );
-// arrayManipulator([1, 2, 3, 4, 5],
-//     ['addMany 5 9 8 7 6 5', 'contains 15', 'remove 3', 'shift 1', 'print']
-// );
-// arrayManipulator([1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
-//     ["sumPairs", "sumPairs", "addMany 0 -1 -2 -3", "print"]);
 arrayManipulator([2, 2, 4, 2, 4],
     ["add 1 4", "sumPairs", "print"]);
+arrayManipulator([1, 2, 4, 5, 6, 7],
+    ['add 1 8', 'contains 1', 'contains 3', 'print']
+);
+arrayManipulator([1, 2, 3, 4, 5],
+    ['addMany 5 9 8 7 6 5', 'contains 15', 'remove 3', 'shift 1', 'print']
+);
+arrayManipulator([1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
+    ["sumPairs", "sumPairs", "addMany 0 -1 -2 -3", "print"]);
