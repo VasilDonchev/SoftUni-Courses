@@ -13,7 +13,6 @@ function movies(input) {
       if (movie) {
         movie.director = director;
       }
-
     } else if (line.includes("onDate")) {
       let [name, date] = line.split(" onDate ");
 
@@ -25,11 +24,10 @@ function movies(input) {
     }
   }
   movies.forEach((movie) => {
-      if (movie.name && movie.director && movie.date) {
-          
-          console.log(JSON.stringify(movie));
-      }
-    });
+    if (movie.name && movie.director && movie.date) {
+      console.log(JSON.stringify(movie));
+    }
+  });
 }
 movies([
   "addMovie Fast and Furious",
