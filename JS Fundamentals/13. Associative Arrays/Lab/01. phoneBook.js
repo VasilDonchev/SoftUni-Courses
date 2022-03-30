@@ -1,11 +1,14 @@
 function solve(input) {
-  let assocArr = {};
-  for (let entry of input) {
-    entry = entry.split(" ");
-    assocArr[entry[0]] = entry[1];
+  let phonebook = {};
+  for (let line of input) {
+    let tokens = line.split(" ");
+    let name = tokens[0];
+    let number = tokens[1];
+    //phonebook[entry[0]] = entry[1];
+    phonebook[name] = number;
   }
-  for (let assocKey in assocArr) {
-    console.log(`${assocKey} -> ${assocArr[assocKey]}`);
+  for (let key in phonebook) {
+    console.log(`${key} -> ${phonebook[key]}`);
   }
 }
 solve([
