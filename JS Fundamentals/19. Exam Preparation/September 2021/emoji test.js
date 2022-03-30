@@ -1,7 +1,7 @@
+console.log('Hello');
+
 function emojiDetector(arr) {
     let text = arr[0];
-    let strArr = text.split(" ");
-    let emojiRegExp = /([:|*]{2})([A-Z][a-z]{2,})\1/g;
     let digitRegExp = /\d/g;
     let digits = text.match(digitRegExp);
     let treshold = 1;
