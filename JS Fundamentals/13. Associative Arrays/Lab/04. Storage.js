@@ -2,13 +2,13 @@ function storage(arr) {
   let stor = new Map();
   for (let line of arr) {
     line = line.split(" ");
-    let name = line[0];
+    let product = line[0];
     let quantity = Number(line[1]);
-    if (stor.has(name)) {
-      let newQantity = stor.get(name) + quantity;
-      stor.set(name, newQantity);
+    if (stor.has(product)) {
+      let newQantity = stor.get(product) + quantity;
+      stor.set(product, newQantity);
     } else {
-      stor.set(name, quantity);
+      stor.set(product, quantity);
     }
   }
   for (let storEntry of stor) {
