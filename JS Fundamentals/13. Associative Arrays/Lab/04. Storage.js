@@ -1,5 +1,6 @@
 function storage(arr) {
   let stor = new Map();
+  
   for (let line of arr) {
     line = line.split(" ");
     let product = line[0];
