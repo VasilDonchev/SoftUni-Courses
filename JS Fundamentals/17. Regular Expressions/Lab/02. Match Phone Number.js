@@ -2,8 +2,8 @@ function matchPhoneNumber(input) {
   //let patern = /(?<!\d)[+]359([ -])2\1\d{3}\1\d{4}\b/g; // /(?:\s|^)\+359( |-)2\1\d{3}\1\d{4}\b/g
   let patern = /(?:\s|^)\+359( |-)2\1\d{3}\1\d{4}\b/g;
   let validPhones = [];
-  let validPhone = patern.exec(input);
-  while (validPhone !== null) {
+  let validPhone = null;
+  while (validPhone = patern.exec(input) !== null) {
     validPhones.push(validPhone[0]);
     validPhone = patern.exec(input);
   }

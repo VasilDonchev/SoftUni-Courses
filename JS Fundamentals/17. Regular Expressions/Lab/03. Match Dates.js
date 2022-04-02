@@ -2,6 +2,7 @@ function matchDates(input) {
   let patern =
     /\b(?<day>\d{2})([-.\/])(?<month>[A-Z][a-z]{2})\2(?<year>\d{4})\b/g;
   let validDates = [];
+  let validDate = null;
 
   while ((validDate = patern.exec(input)) !== null) {
     let day = validDate.groups["day"];
