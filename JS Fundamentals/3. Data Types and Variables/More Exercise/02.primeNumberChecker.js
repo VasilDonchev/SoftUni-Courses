@@ -1,14 +1,20 @@
 function primeNumberChecker(num) {
-  let isPrime = false;
-  if (num >= 2) {
-    isPrime = true;
+  let sum = 0;
+  if (isPrime(num)) {
+    sum += num;
   }
-  if (num % 2 == 0) {
-    isPrime = false;
+  //console.log(isPrime ? "true" : "false");
+  console.log(sum);
+  function isPrime(num) {
+    if (num < 2) {
+      return false;
+    }
+    for (let index = 2; index < num; index++) {
+      if (num % index == 0) {
+        return false;
+      }
+      return true;
+    }
   }
-  if (num % 3 == 0) {
-    isPrime = false;
-  }
-  console.log(isPrime ? "true" : "false");
 }
-primeNumberChecker(383);
+primeNumberChecker(10);
